@@ -1,0 +1,30 @@
+﻿<Window x:Class="ShopAssistant.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShopAssistant"
+        xmlns:mw="clr-namespace:ShopAssistant.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="450">
+    <Window.DataContext>
+        <mw:SAViewModel></mw:SAViewModel>
+    </Window.DataContext>
+    <Window.Resources>
+        <local:BoolToBrushConverter x:Key="b2b"></local:BoolToBrushConverter>
+        <local:DecimalToStringConverter x:Key="d2s"></local:DecimalToStringConverter>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" FontSize="25" Foreground="Navy" Margin="10">
+            Suma:
+            <Run Foreground="Black" FontFamily="Courier New" Text="{Binding Suma, Mode=OneWay, Converter={StaticResource d2s}}"></Run>
+        </TextBlock>
+        <TextBox x:Name="tbKwota" FontSize="30" FontFamily="Courier New" TextAlignment="Right" Margin="10" Text="0" Grid.Row="1" Foreground="{Binding ElementName=btnDodaj, Path=IsEnabled, Mode=OneWay, Converter={StaticResource b2b}}"></TextBox>
+        <Button x:Name="btnDodaj" Content="Dodaj" FontSize="20" Margin="10" Grid.Row="2" Command="{Binding DodajKwote, Mode=OneWay}" CommandParameter="{Binding ElementName=tbKwota, Path=Text}"></Button>
+    </Grid>
+</Window>
