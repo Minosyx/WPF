@@ -1,0 +1,21 @@
+﻿<Window x:Class="ZC2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZC2"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" MinHeight="320" MinWidth="400">
+    <DockPanel>
+        <Label x:Name="la" DockPanel.Dock="Top" Target="{Binding ElementName=ta}" >Współczynnik a:</Label>
+        <TextBox x:Name="ta" DockPanel.Dock="Top" Margin="10, 0 , 10, 0" Width="100" HorizontalAlignment="Left" Text="{Binding AProperty, Mode=TwoWay, StringFormat={}{0:#.#######},  UpdateSourceTrigger=LostFocus}" ></TextBox>
+        <Label x:Name="lb" DockPanel.Dock="Top" Target="{Binding ElementName=tb}" >Współczynnik b:</Label>
+        <TextBox x:Name="tb" DockPanel.Dock="Top" Margin="10, 0 , 10, 0" Width="100" HorizontalAlignment="Left" Text="{Binding BProperty, Mode=TwoWay, StringFormat={}{0:#.#######},  UpdateSourceTrigger=LostFocus}" ></TextBox>
+        <Label x:Name="lc" DockPanel.Dock="Top" Target="{Binding ElementName=tc}" >Współczynnik c:</Label>
+        <TextBox x:Name="tc" DockPanel.Dock="Top" Margin="10, 0 , 10, 0" Width="100" HorizontalAlignment="Left" Text="{Binding CProperty, Mode=TwoWay, StringFormat={}{0:#.#######},  UpdateSourceTrigger=LostFocus}" ></TextBox>
+        <Button x:Name="btn" DockPanel.Dock="Bottom" HorizontalAlignment="Right" Margin="10" Height="50" Width="100" Click="Btn_OnClick" >_Oblicz</Button>
+        <TextBlock x:Name="tblock" Margin="10" ></TextBlock>
+    </DockPanel>
+</Window>
