@@ -1,0 +1,30 @@
+﻿<Window x:Class="Choinka.MainWindow" x:Name="okno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Choinka"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="375"
+        WindowStyle="None"
+        ShowInTaskbar="False"
+        Opacity=".75"
+        Background="{x:Null}"
+        AllowsTransparency="True"
+        MouseDown="MainWindow_OnMouseDown" 
+        MouseMove="MainWindow_OnMouseMove"
+        MouseUp="MainWindow_OnMouseUp"
+        PreviewKeyDown="MainWindow_OnPreviewKeyDown"
+        Closing="MainWindow_OnClosing">
+    <Window.Resources>
+        <Storyboard x:Key="scenorysZamykaniaOkna" Completed="Storyboard_Completed">
+            <DoubleAnimation Storyboard.TargetName="okno" Storyboard.TargetProperty="Opacity" Duration="0:0:1" To="0.0"
+                             RepeatBehavior="1x" AutoReverse="False"></DoubleAnimation>
+        </Storyboard>
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="choinka.png"></ImageBrush>
+        </Grid.Background>
+    </Grid>
+</Window>
