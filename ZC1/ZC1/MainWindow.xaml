@@ -1,0 +1,14 @@
+﻿<Window x:Class="ZC1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZC1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" MinHeight="320" MinWidth="400">
+    <DockPanel>
+        <TextBox x:Name="tbox" Height="100" Margin="10" DockPanel.Dock="Top" TextChanged="Tbox_OnTextChanged" />
+        <Button x:Name="btn" Height="50" Width="100" DockPanel.Dock="Bottom" HorizontalAlignment="Right" Margin="10" Click="Btn_OnClick" >Czyść</Button>
+        <TextBlock x:Name="tblock" Margin="10" />
+    </DockPanel>
+</Window>

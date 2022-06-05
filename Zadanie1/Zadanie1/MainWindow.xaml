@@ -1,0 +1,57 @@
+﻿<Window x:Class="Zadanie1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zadanie1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBox Background="Yellow" Margin="10" TextChanged="TextBoxBase_OnTextChanged">
+            <!--<TextBox.LayoutTransform>
+                <ScaleTransform ScaleX="0.5" ScaleY="0.75"></ScaleTransform>
+            </TextBox.LayoutTransform>-->
+            <TextBox.RenderTransform>
+                <ScaleTransform ScaleX="0.5" ScaleY="0.75"></ScaleTransform>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox Background="Yellow" Margin="10" TextChanged="TextBoxBase_OnTextChanged">
+            <!--<TextBox.LayoutTransform>
+                <SkewTransform AngleX="20" AngleY="-2"></SkewTransform>
+            </TextBox.LayoutTransform>-->
+            <TextBox.RenderTransform>
+                <SkewTransform AngleX="20" AngleY="-2"></SkewTransform>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox Background="Yellow" Margin="10" TextChanged="TextBoxBase_OnTextChanged">
+            <TextBox.RenderTransform>
+                <RotateTransform Angle="0"></RotateTransform>
+            </TextBox.RenderTransform>
+            <TextBox.Triggers>
+                <EventTrigger RoutedEvent="TextBox.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.(Angle)" From="0" To="360" AutoReverse="False" RepeatBehavior="Forever"></DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBox.Triggers>
+        </TextBox>
+        <TextBox Background="Yellow" Margin="10" Width="50" TextChanged="TextBoxBase_OnTextChanged">
+            <!--<TextBox.LayoutTransform>
+                <TranslateTransform X="50" Y="100"></TranslateTransform>
+            </TextBox.LayoutTransform>-->
+            <TextBox.RenderTransform>
+                <TranslateTransform X="50" Y="100"></TranslateTransform>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox Background="Yellow" TextChanged="TextBoxBase_OnTextChanged">
+            <!--<TextBox.LayoutTransform>
+                <RotateTransform Angle="15"/>
+            </TextBox.LayoutTransform>-->
+            <TextBox.RenderTransform>
+                <RotateTransform Angle="15"/>
+            </TextBox.RenderTransform>
+        </TextBox>
+    </StackPanel>
+</Window>

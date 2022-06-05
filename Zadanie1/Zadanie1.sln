@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32002.185
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanie1", "Zadanie1\Zadanie1.csproj", "{61C22864-8416-4176-ABCF-EE16F141514E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanie2", "Zadanie2\Zadanie2.csproj", "{A688660F-545A-4CA6-86DC-BA47DC1560A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadanie3", "Zadanie3\Zadanie3.csproj", "{7BDFF4BC-5398-4F8D-968C-BD63A994FCC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Przycisk", "Przycisk\Przycisk.csproj", "{D47525B6-7052-4BB9-8B83-8EA312E3A84E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61C22864-8416-4176-ABCF-EE16F141514E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61C22864-8416-4176-ABCF-EE16F141514E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61C22864-8416-4176-ABCF-EE16F141514E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61C22864-8416-4176-ABCF-EE16F141514E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A688660F-545A-4CA6-86DC-BA47DC1560A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A688660F-545A-4CA6-86DC-BA47DC1560A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A688660F-545A-4CA6-86DC-BA47DC1560A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A688660F-545A-4CA6-86DC-BA47DC1560A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BDFF4BC-5398-4F8D-968C-BD63A994FCC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BDFF4BC-5398-4F8D-968C-BD63A994FCC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BDFF4BC-5398-4F8D-968C-BD63A994FCC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BDFF4BC-5398-4F8D-968C-BD63A994FCC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D47525B6-7052-4BB9-8B83-8EA312E3A84E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D47525B6-7052-4BB9-8B83-8EA312E3A84E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D47525B6-7052-4BB9-8B83-8EA312E3A84E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D47525B6-7052-4BB9-8B83-8EA312E3A84E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF1A811D-7C25-4125-BD84-A4AF30F35E79}
+	EndGlobalSection
+EndGlobal
